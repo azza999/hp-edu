@@ -1,0 +1,2000 @@
+cd /home/guru/
+ll
+tail test
+tail -f test
+kill -9 2286
+ps -ef | grep sllep
+ps -ef | grep sleep
+ps -ef | grep root
+pwd
+clear
+su - guru
+su - guru
+rm -rf /home/co
+su - fire
+su - guru
+kill -HUP 1030
+ps -ef|grep sshd
+kill -9 1030
+ps -ef|grep sshd
+/usr/sbin/sshd -D
+ps -ef|grep sshd
+ssh localhost
+ssh guru@localhost
+service ssh restart
+service sshd restart
+systemctl status sshd.service
+kill 22504
+kill -9 22504
+systemctl status sshd.service
+service sshd restart
+systemctl status sshd.service
+bg
+jobs
+jobs .
+jobs /
+jobs
+jobs sleep
+jobs
+fg
+lclear
+clear
+ps -ef | grep sleep
+kill -9 24900
+ps -ef | grep sleep
+kill 25030
+ps -ef | grep sleep
+ll
+anaconda
+conda
+python
+cd /bin/
+ll ps
+ps
+cd /home/guru/
+ll
+./clock 
+while :; do ll; done
+chmod 2775
+chmod 2775 /pro
+chmod 2775 /project/
+ll
+ll -d /proj
+ll -d /project/
+cd /home/guru/
+ll
+cd ~
+ll
+ll -d .
+cd ..
+chmod 777 root
+vi /etc/hosts
+ssh sv01
+ssh user1@sv01
+sleep 500
+ps -ef | grep passwd
+while :; do clear; ps -ef; sleep 1; done
+while :; do clear; ps -ef | grep passwd; sleep 1; done
+mkdir /tmptest
+ll
+cd .
+pwd
+cd ..
+ll
+chmod 777 tmptest
+chmod 1777 tmptest
+ll /tmp
+cd /
+ll
+umask
+ps -f
+/home/guru/clock 
+ps -f
+kill -9 17161
+ll
+ps -f
+/home/guru/clock 
+ps -f
+kill -9 17321
+find / -type d -user root -perm /2000
+cd /run/log/journal/
+ll
+cd ..
+ll
+cd journal/
+ll
+touch test
+ll
+rm test
+cd /home/
+ll
+mkdir co 2755
+ll
+rm 2755/
+rm -r 2755
+chmod 2755 co
+ll
+cd co
+ll
+cd ..
+ll
+chmod 2777
+chmod 2777 co
+useradd -G sales aaa
+id aa
+id aaa
+mkdir /project
+ll -d /project
+ld /project
+ld
+chown :sales /project
+chmod g+w /project
+ll
+cd /
+ll
+ll -d project/
+ll
+cd /project/
+ll
+chmod g-s /project/
+ll
+ll -d .
+ll
+chmod 2775 /project/
+ll -d .
+chmod 775 /project/
+ll -d .
+chmod 0775 /project/
+ll -d .
+chmod 1775 /project/
+ll -d .
+chmod 4775 /project/
+ll
+ll -d .
+chmod 1775 /project/
+ll -d .
+chmod 0775 /project/
+ll -d 
+ll u-s .
+chmod u-s .
+ll -d .
+chmod g-s .
+ll -d .
+man acl
+man pcon
+man acl
+ls -l
+cd ..
+cd pro
+
+cd project/
+cd ~
+ll
+su - guru
+su - aaa
+pwd
+cd /home/guru/
+cd ~
+cp /home/guru/vi.test vi.test
+ll
+setfacl -m u:visitor:r vi.test
+setfacl -m u:guru:rw vi.test
+lll
+ll
+getfacl vi.test 
+setfacl -m g:sales:7 vi.test 
+ll
+setfacl -m g:guru:5 vi.test
+ll
+getfacl vi.test 
+setfacl -m o::4 vi.test
+ll
+setfacl -m o::5 vi.test
+ll
+getfacl vi.test 
+chmod 754 vi.test 
+ll
+getfacl vi.test 
+getfacl -R /root
+vi
+ll
+history 
+history + grep cp
+history | grep cp
+cp /home/guru/vi.test vi.test
+ll
+setfacl -m m::r-x vi.test
+getfacl -R --absolute-names /root
+getfacl -R --absolute-names /root > /tmp/acl.backup
+getfacll vi.test
+getfacl vi.test
+setfacl -x g:sales vi.test
+getfacl vi.test
+setfacl -m g:sales vi.test
+setfacl -m g:sales:5 vi.test
+getfacl vi.test
+setfacl -x u:guru vi.test
+getfacl vi.test
+ll
+ll vi.test
+setfacl --restore=/tmp/acl.backup
+ll
+getfacl vi.test 
+setfacl g:sales:7 vi.test 
+setfacl -m g:sales:7 vi.test 
+getfacl vi.test 
+getfacl --absolute-names -R *
+getfacl --absolute-names -R * > /tmp/acl.bak
+setfacl -x g:sales vi.test
+getfacl sales;
+getfacl vi.test 
+ll
+setfacl -b vi.test
+ll
+setfacl --restore=/tmp/acl.bak
+ll
+getfacl vi.test 
+:q
+view /etc/passwd
+view /etc/gro
+view /etc/group
+view /etc/groups
+view /etc/group
+groupadd hp
+tail /etc/hroup
+tail /etc/group
+groupadd -g 1313 ibm
+tail /etc/group
+groupmod -g 1414 hp
+tail /etc/group
+ping -c 3 server1
+ping -c server1
+ping sv01
+yum -y install zsh
+useradd red
+awk -F: '$4 != "" {print $0}'
+awk -F: '$4 != "" {print $0}' /etc/group
+view /etc/group
+ll
+useradd -u 1212 -g sales -G hp,red,wheel -s /bin/zsh -c "010-1111-2222" -d /home/blue blue
+id blue
+uid
+gid
+id
+whoami
+who
+tail /etc/passwd
+mail
+ll
+mailx
+echo work | passwd --stdin blue
+usermod -u 1616 -g sales -d /project -s /sbin.nologin red
+passwd red
+echo work | passwd --stdin red
+userdel -R red
+userdel -r red
+view /etc/passwd
+cd /project/
+ll
+cd /
+view /etc/group
+userdel blue
+cd /home/
+ll
+cd blue/
+ll
+cd ..
+cd red
+ll
+cd ..
+ll
+rm -r red
+y
+cd red/
+ll
+cd ..
+rm red
+ll
+rm -r red
+y
+ll
+cd blue
+ll
+cd ..
+rm -rf blue
+date
+cal
+fire
+bdf
+df
+chage -l guru
+man chage
+chage -l guru
+chage -m 5
+chage -m 5 guru
+chage guru
+chage -l guru
+chage -m 5 -M 30 -W 3 -i 15 -E 2020-12-31 guru
+chage -m 5 -M 30 -W 3 -I 15 -E 2020-12-31 guru
+view /etc/security/
+view /etc/security/time.conf 
+view /etc/security/limits.d/20-nproc.conf 
+view /etc/skel/.bashrc 
+view /etc/skel/.bash_profile 
+view /etc/default/useradd 
+vi /etc/login.defs 
+vi /etc/default/useradd 
+ll -a /etc/skel/
+la
+ll -a /etc/skell /home/visitor/
+ll -a /etc/skel /home/visitor/
+cd /hctc.scam
+cd /hctc.scan
+main al
+mkdir /etc/skel/Homepage
+touch /etc/skel/Manual.txt
+useradd fire
+echo work | passwd --stdin fire
+kll
+date
+cal
+cd /home/fire/
+ll
+ll -a
+view Homepage
+swinstall
+rmp u
+view Rpm 
+rpm --aa
+rpm --aa| awith config
+rpm -qa config
+view confi
+yum -y install authconfig-gikt 
+yum -y install authconfig-gkt 
+yum -y install authconfig-gtk
+authconfig-ki\fi
+authconfig-gtk
+authconfig-gtk --display
+authconfig-gtk
+man authconfig-gkt
+man authconfig-gtk
+authconfig-gtk
+rlman authconfig-gkt
+yum -y install authconfig-gtk
+rpm -qa | grep authconfig
+auth-config-gtk
+authconfig-gtk
+env DISPLAY
+env | grep DISPLAY
+find / -name authconffig-gtk
+pwd
+ll
+id
+find / -name authconffig-gtk
+find / -name authconfig-gtk
+yum -y install authconfig-gtk
+yum -y uninstall authconfig-gtk
+yum -y install authconfig-gtk
+rpm -qa | grep authconfig
+authconfig-gtf
+authconfig-gtfk
+authconfig-gtk
+authconfig
+getent
+getebt passwd dsuser
+getebt passwd dsuser1
+getent passwd dsuser1
+getent passwd dsuser11
+getent passwd dsuser1
+ststemctl status sssd
+systemctl status sssd
+systemctl stop sssd
+authconfig-gtk
+systemctl start sssd
+ssh dsuser1@localhost
+authconfig-gtk
+ll
+echo $?
+$?
+echo $?
+ll
+l
+ll
+echo $?
+l
+echo $?
+cd /
+ll
+su - guru
+chmod 554 root
+ll
+su - guru
+getfacl vi.test
+cd ~
+ll
+cd /home/guru/
+ll
+getfacl vi.test 
+man setfacl
+man getfacl
+su - blue
+passwd guru
+getent passwd dsuser1
+authconfig-gtk
+getent passwd dsuser1
+ssh dsuser1@localhost
+ps -f
+ps -ef
+ps -ef | clock
+ps -ef | grep clock
+ps -ef
+iostat
+iostat -h
+iostat
+iostat -h
+iostat
+iostat -h
+iostat
+iostat -h
+iostat
+iostat -h
+man iostat
+sleep 100 &
+ps -l
+ps -f
+ps -ell
+ps -ell | sort -8
+ps -ell | sort -n -k8
+ps -ell | sort -n -k8 | more
+nice -n -5 sleep 300
+jobs
+pgrep sleep
+pgrep -a sleep
+kill 18 31017
+pgrep -a sleep
+ps -ef | grep sleep
+jobs
+kill 19 31017
+ps -ef | grep sleep
+kill 9 31017
+ps -ef | grep sleep
+kill -9 31017
+nice -n -5 sleep 300 &
+ps -l
+renice -n 5 31396
+ps -l
+tapestat 
+pcio
+cpio
+man cpio
+tar -gz
+man tar
+find / -name *.tar
+cd /home/guru/tars/
+ll
+mv chap4.tar chap4
+ll
+mv chap chap4.tar
+mv chap4 chap4.tar
+tar -cvzf /tmp/home.tar.gz /home
+ll /tmp/home*
+tar -cvf /tmp/home.tar /home
+ll /tmp/home*
+tar -cvzf /tmp/home.tar.gz /home
+ll /tmp/home*
+rm /tmp/home.tar.gz
+tar -cvzf /tmp/home.tar.gz /home
+ll /tmp/home*
+tar -tvf /tmp/home.tar
+tar -crvzf /tmp/home.tar.gz /home
+man tar
+tar -crvlf /tmp/home.tar.gz /home
+man tar
+tar -crvPf /tmp/home.tar.gz /home
+tar -cvzfP /tmp/home.tar.gz /home
+tar -tvf /tmp/home.tar.gz /home
+tar -tvf /tmp/home.tar.gz
+tar -cvzfP /tmp/home.tar.gz /home
+tar -tvf /tmp/home.tar.gz
+tar -tvf /tmp/home.tar
+rm -rf /home
+cd /
+ll
+rm -rf /home
+ps -ef | grep sleep
+kill 4303
+kill 8056
+kill -9 8056
+ps -ef | grep sleep
+kill -9 4303
+passwd
+su - visitor
+ls
+cd /tmp
+ll
+cd /
+tar -xzvf home.tar
+tar -xzvf /tmp/home.tar
+ll
+cd home
+ll
+cd ..
+rm home
+rm -r home
+cd home/
+ll
+tar -xvzf /tmp/home.tar.gz -C /
+ll
+cd /tmp[
+cd /tmp
+ll home*
+bzip2 home.tar
+ll
+bzip2 home.tar.bz2
+bzip2 home.tar.gz 
+ll
+gunzip home.tar.gz.bz2
+bzip2 -d home.tar.bz2 
+bzip2 -d home.tar.gz.bz2 
+ll
+gunzip home.tar.gz 
+xz home.tar
+ll
+xz home.tar.gz 
+ll
+xz -d home.tar.
+xz -d home.tar.gz.xz 
+xz -d home.tar.xz 
+ll
+mv home.tar home.tar2
+gzip -d home.tar.gz 
+ll
+gzip home.tar
+mv home.tar2 home.tar
+ll
+find /home
+find /home | cpio -ocv > /tmp/home.cpio
+cat /tmp/home.cpio 
+ll /home
+cd /
+rm -rf /home
+cpio -icdmu < /tmp/home.cpio
+cd /home/
+ll
+git
+git init
+ll
+while :; do clear; ll; sleep 1; done
+pwd
+npm install
+node
+'/usr/share/doc/HTML/index.html' man echo
+man echo
+bd
+bc
+l
+ll
+lwll
+lgrep
+wgrep
+qgrep
+ogrep
+pgrep
+yum clean all 
+curl 127.0.0.1
+vi /etc/fstab 
+man fsta
+man fstab
+ll
+su - guru
+calc
+su - guru
+wget ttp://rpmfind.net/linux/RPM/centos/7.8.2003/x86_64/Packages/amanda-3.3.3-21.el7.x86_64.html
+wget http://rpmfind.net/linux/RPM/centos/7.8.2003/x86_64/Packages/amanda-3.3.3-21.el7.x86_64.html
+rpm -Uvh http://rpmfind.net/linux/RPM/centos/7.8.2003/x86_64/Packages/amanda-3.3.3-21.el7.x86_64.html
+rpm -Uvh amanda-3.3.3-21.el7.x86_64.rpm
+rpm -qa | grep aman
+pwd
+ll
+rm amanda-3.3.3-21.el7.x86_64.html 
+wget http://rpmfind.net/linux/centos/7.8.203/os/x86_64/packages/amanda-3.3.3-21.el7.x86_64.rpm
+wget http://rpmfind.net/linux/centos/7.8.203/os/x86_64/Packages/amanda-3.3.3-21.el7.x86_64.rpm
+wget http://rpmfind.net/linux/centos/7.8.2003/os/x86_64/Packages/amanda-3.3.3-21.el7.x86_64.rpm
+ll
+mv /home/guru/finance/amanda-libs-3.3.3-21.el7.x86_64.rpm /root/
+ll
+chown root:root *
+ll
+rpm -Uvh amanda-libs-3.3.3-21.el7.x86_64.rpm 
+rpm -Uvh amanda-3.3.3-21.el7.x86_64.rpm 
+echo hi >> /usr/lib/systemd/system/amanda.socket 
+rm -f /usr/sbin/amaespipe 
+chgrp wheel /usr/sbin/amcrypt
+rpm -V amanda
+chown guru:wheel /usr/sbin/amcrypt
+rpm -V amanda
+rpm -qf /usr/sbin/amcrypt
+rpm -qf ls
+rpm -qf /bin/ls
+which ls
+which ll
+
+rpm -ql /bin/ks
+rpm -ql /bin/ls
+rpm -ql amanda
+rpm -e amanda
+rpm -Uvh amanda
+rpm -Uvh amanda-3.3.3-21.el7.x86_64.rpm 
+rpm -V amanda
+amaespipe 
+cd /home/visitor/
+l
+ll
+cd /
+ll
+alias l='ls'
+l
+rpm -e amanda-libs
+rpm -e --force amanda-libs
+rpm -e --nodeps amanda-libs
+amaespipe 
+cd /root/
+ll
+rpm -Uvh amanda-libs-3.3.3-21.el7.x86_64.rpm 
+rpm -e amanda
+rpm -e amanda-libs 
+cd /root/
+ll
+rpm -Uvh --force amanda-3.3.3-21.el7.x86_64.rpm 
+rpm -Uvh amanda-libs-3.3.3-21.el7.x86_64.rpm 
+rpm -Uvh amanda-3.3.3-21.el7.x86_64.rpm 
+cd /var/lib/rp
+cd /var/lib/rpm
+ll
+file
+file /var/lib/rpm/*
+cd /root/
+view .bash_history 
+ll .*
+ll .bash
+ll .bash*
+yum install mod_ssl
+yum search apache
+rpm -qa | grep mod_ssl
+yum remove mod_ssl
+yum history
+info 5
+rpm -e mod_ssl
+rpm -qa | grep mod_ssl
+yum install mod_ssl
+rpm -e mod_ssl
+yum history 
+rpm -e mod_ssl
+rpm -qa | mod_ssl
+rpm -qa | grep mod_ssl
+yum history undo 6
+yum history
+yum install mod_ssl
+yum history
+yum history info 7
+yum undo 7
+yum history undo 7
+yum repolist
+top
+[A
+top
+yum search dbench
+yum search apache
+apt-get
+apachectl 
+apachectl status
+apachectl start
+systemctl status httpd.service 
+systemctl start httpd.service
+rpm install
+man yum
+man -k yum
+man man
+man ll
+man l
+l
+yum repolist
+yum repolist base
+cat -n /etc/yum.conf 
+more /etc/yum
+more /etc/yum.conf 
+more -n /etc/yum.conf 
+more +NUM /etc/yum.conf 
+ll /var/cache/yum/x86_64/7/
+ll /etc/yum.repos.d/
+more /etc/yum.repos.d/classroom.repo 
+more /etc/yum.repos.d/CentOS-Vault.repo 
+view /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+more /etc/yum.repos.d/CentOS-Vault.repo 
+view /etc/yum.repos.d/CentOS-Vault.repo 
+yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+yum repolist
+yum search dbench
+yum searchall dbench
+yum search all dbench
+se
+clear
+yum install dbench
+cd /var/cache/yum/x86_64/7/epel/packages/
+;ll
+ll
+cd ..
+ll
+cd packages/
+ll
+cd ..
+ll
+yum grouplist
+yum repolist 
+yum grouplist
+yum grouplist | more
+nfs
+
+yum grouplist | more
+yum grouplist Web Server
+yum groupinstall 'Basic Web Server'
+ll
+cd /
+ll
+cd /var/www/
+ll
+cd html/
+ll
+ps -ef | grep http
+ll
+pwd
+vi index.html
+yum install git
+cd /srv/
+ll
+yum list installed | less
+yum list available | less
+yum list update
+yum list updates
+yum info gimp
+yum install gimp
+yum remove gimp
+yum whatprovides "*/zebra"
+yum install "/usr/sbin/zebra"
+yum remove "/usr/sbin/zebra"
+yum install "/usr/sbin/zebra"
+yum grouplist
+yum groupinfo
+yum groupinfo "MariaDB Database server"
+yum groupinstall -y "MariaDB Database server"
+yum groupremove -y "MariaDB Database server"
+yum search virtual
+yum search virtual-host
+yum search 'virtual host'
+yum -y install virt-manager
+man yum
+yum -y install virt-manager virt-viewer libvirt qemu-kvm libvirt-daemon-kvm
+echo $?
+ye
+yes
+$?
+echo $?
+yes
+echo $?
+./clock
+/home/guru/clock 
+echo $?
+yes
+no
+ntpq -p
+ntpq
+df -h
+ioscan -funC
+lsblk
+blk
+lsblk
+view /etc/fstab 
+lvm
+lvmconf
+lvmconfig
+parted ?
+parted --help
+w
+fdisk
+fdisk /dev/sda 
+df
+lsblk 
+view /etc/fstab 
+ll
+man partprobe
+man kpartx
+man partprobe
+partprobe /dev/sda
+lsblk 
+partprobe /dev/sda3
+lsblk 
+df
+/run/user/
+ll
+cd /run/user/
+ll
+cd 0/
+LL
+ll
+cd dconf/
+ll
+view user 
+cd gn
+cd ../gnome-shell/
+ll
+cd runtime-state-LE.\:0/
+lll
+ll
+cd /
+l
+alias 
+alias abcdefg='l'
+abcdefg 
+unalias abcdefg 
+lsblk -f
+mkfs -t ext4 /dev/sda3
+lsblk
+lsblk -f
+mkfs.xfs -f /dev/sda3
+lsblk -f
+view /etc/fstab 
+mount /dev/sda3 /var/lib/libvirt/images/
+unmount
+man mount
+df
+ll /home/
+mount /dev/sda3 /var/lib/libvirt/images/aaa
+mount /dev/sda3 /home/aaa
+df
+cd /home/aaa/
+ll
+touch file{1..5}
+umount /dev/sda3
+cd ..
+umount /dev/sda3
+mount /dev/sda3 /home/aa
+mount /dev/sda3 /home/aaa/
+cd /home/aaa/
+ll
+cd /
+ll
+pwd
+umount /home/aaa/
+mkdir /home/www
+mount /dev/sda3 /home/www/
+cd /home/www/
+ll
+cd /home/aaa/
+ll
+touch newfile {1..5}
+ll
+cd /
+umount /home/www/
+mount /dev/sda3 /home/aaa/
+cd /home/aaa/
+ll
+cd /home/www/
+ll
+cd /
+umount /home/www/
+ll
+umount /home/aaa/
+ll
+cd /home/a
+l
+cd /home/aaa/
+ll
+mount -a
+reboot
+lsmod | grep kvm
+lsmod
+man lslod
+man lsmod
+virt-manager 
+find / -name core
+cd /var/lo
+cd /var/log/
+ll
+find / -name syslog*
+cd /var/log/
+ll
+ps -ef | grep journal
+cd /run/
+ll
+cd log/
+ll
+cd journal/
+ll
+cd 9d891011174d46dc81d036e7b3f562eb/
+ll
+view system.journal 
+strings system.journal 
+strings system.journal  | more
+cd .
+cd /
+cd /var/
+ll
+cd log/
+ll
+ll jour*
+journalctl --since "2020-10-22 15:30:00" --until now
+systemctl -t service 
+systemctl -t service | grep service
+:q
+systemctl -t service | grep corn
+systemctl -t service | grep crom
+systemctl -t service | grep cron
+journalctl -u crond.service 
+journalctl -u apache
+journalctl -u sshd
+journalctl -u xinetd.service 
+find / -name *syslog
+journalctl -u sshd.service 
+journalctl --setup-keys --interval=3m
+mkdir /var/log/journal
+journalctl restart system-journald
+systemctl restart system-journald
+systemctl restart systemd-journald
+journalctl --setup-keys --interval=3m
+journalctl
+journalctl --verify --verify-key=708443-b07854-aa05f6-c7e647/87eafc-aba9500
+cat -n /etc/rsyslog.conf 
+cat -n /etc/rsyslog.conf  | more
+cat -n /etc/rsyslog.conf
+more -NUM /etc/rsyslog.conf
+more +NUM /etc/rsyslog.conf
+more +NUM1 /etc/rsyslog.conf
+more +NUM 10 /etc/rsyslog.conf
+more /etc/rsyslog.conf
+view /etc/rsyslog.conf
+systemctl restart rsyslog.service
+ps -ef | grep rsyslog
+pwd
+/home/guru/clock 
+vi /home/guru/clock 
+/home/guru/clock 
+top
+view /home/guru/finance/calc 
+ll
+ifconfig
+man syslog
+man rsyslog.conf
+env | grep sound
+env | grep vol
+env | grep v
+ssh localhost
+ssh sv
+view /etc/hosts
+ssh sv01
+ssh user1@sv01
+ll
+/home/guru/clock 
+view /var/log/logtest2.txt 
+man logrotate
+netstat -nr
+cat /etc/resolv.conf 
+nmcli dev
+nmcli device 
+nmcli connection
+nmcli connection delete 
+nmcli connection delete eno1 
+nmcli connection add type ethernet con-name eno1 ifname eno1 autoconnect yes
+nmcli con mod eno1 ipv4.addresses 59.29.224.201/24 ipv4.gateway 59.29.224.254 ipv4.dns 168.126.63.1 ipv4.method manual
+systemctl restart network
+ifconfig
+ping -c 3 www.google.clo
+ping -c 3 www.google.com
+ping -c 3 kimdohyun.xyz
+ping 168.126.63.1
+ping 59.29.224.254
+ping sv01
+ping www.google.com
+ping abc.xyz
+ping localhost
+ping -c5 localhost
+view /root/.bash_history 
+ll
+getfacl vi.test 
+chmod 754 vi.test 
+ll
+getfacl vi.test 
+getfacl -R /root
+vi
+ll
+history 
+history + grep cp
+history | grep cp
+cp /home/guru/vi.test vi.test
+ll
+setfacl -m m::r-x vi.test
+getfacl -R --absolute-names /root
+getfacl -R --absolute-names /root > /tmp/acl.backup
+getfacll vi.test
+getfacl vi.test
+setfacl -x g:sales vi.test
+getfacl vi.test
+setfacl -m g:sales vi.test
+setfacl -m g:sales:5 vi.test
+getfacl vi.test
+setfacl -x u:guru vi.test
+getfacl vi.test
+ll
+ll vi.test
+setfacl --restore=/tmp/acl.backup
+ll
+getfacl vi.test 
+setfacl g:sales:7 vi.test 
+setfacl -m g:sales:7 vi.test 
+getfacl vi.test 
+getfacl --absolute-names -R *
+getfacl --absolute-names -R * > /tmp/acl.bak
+setfacl -x g:sales vi.test
+getfacl sales;
+getfacl vi.test 
+ll
+setfacl -b vi.test
+ll
+setfacl --restore=/tmp/acl.bak
+ll
+getfacl vi.test 
+:q
+view /etc/passwd
+view /etc/gro
+view /etc/group
+view /etc/groups
+view /etc/group
+groupadd hp
+tail /etc/hroup
+tail /etc/group
+groupadd -g 1313 ibm
+tail /etc/group
+groupmod -g 1414 hp
+tail /etc/group
+ping -c 3 server1
+ping -c server1
+ping sv01
+yum -y install zsh
+useradd red
+awk -F: '$4 != "" {print $0}'
+awk -F: '$4 != "" {print $0}' /etc/group
+view /etc/group
+ll
+useradd -u 1212 -g sales -G hp,red,wheel -s /bin/zsh -c "010-1111-2222" -d /home/blue blue
+id blue
+uid
+gid
+id
+whoami
+who
+tail /etc/passwd
+mail
+ll
+mailx
+echo work | passwd --stdin blue
+usermod -u 1616 -g sales -d /project -s /sbin.nologin red
+passwd red
+echo work | passwd --stdin red
+userdel -R red
+userdel -r red
+view /etc/passwd
+cd /project/
+ll
+cd /
+view /etc/group
+userdel blue
+cd /home/
+ll
+cd blue/
+ll
+cd ..
+cd red
+ll
+cd ..
+ll
+rm -r red
+y
+cd red/
+ll
+cd ..
+rm red
+ll
+rm -r red
+y
+ll
+cd blue
+ll
+cd ..
+rm -rf blue
+date
+cal
+fire
+bdf
+df
+chage -l guru
+man chage
+chage -l guru
+chage -m 5
+chage -m 5 guru
+chage guru
+chage -l guru
+chage -m 5 -M 30 -W 3 -i 15 -E 2020-12-31 guru
+chage -m 5 -M 30 -W 3 -I 15 -E 2020-12-31 guru
+view /etc/security/
+view /etc/security/time.conf 
+view /etc/security/limits.d/20-nproc.conf 
+view /etc/skel/.bashrc 
+view /etc/skel/.bash_profile 
+view /etc/default/useradd 
+vi /etc/login.defs 
+vi /etc/default/useradd 
+ll -a /etc/skel/
+la
+ll -a /etc/skell /home/visitor/
+ll -a /etc/skel /home/visitor/
+cd /hctc.scam
+cd /hctc.scan
+main al
+mkdir /etc/skel/Homepage
+touch /etc/skel/Manual.txt
+useradd fire
+echo work | passwd --stdin fire
+kll
+date
+cal
+cd /home/fire/
+ll
+ll -a
+view Homepage
+swinstall
+rmp u
+view Rpm 
+rpm --aa
+rpm --aa| awith config
+rpm -qa config
+view confi
+yum -y install authconfig-gikt 
+yum -y install authconfig-gkt 
+yum -y install authconfig-gtk
+authconfig-ki\fi
+authconfig-gtk
+authconfig-gtk --display
+authconfig-gtk
+man authconfig-gkt
+man authconfig-gtk
+authconfig-gtk
+rlman authconfig-gkt
+yum -y install authconfig-gtk
+rpm -qa | grep authconfig
+auth-config-gtk
+authconfig-gtk
+env DISPLAY
+env | grep DISPLAY
+find / -name authconffig-gtk
+pwd
+ll
+id
+find / -name authconffig-gtk
+find / -name authconfig-gtk
+yum -y install authconfig-gtk
+yum -y uninstall authconfig-gtk
+yum -y install authconfig-gtk
+rpm -qa | grep authconfig
+authconfig-gtf
+authconfig-gtfk
+authconfig-gtk
+authconfig
+getent
+getebt passwd dsuser
+getebt passwd dsuser1
+getent passwd dsuser1
+getent passwd dsuser11
+getent passwd dsuser1
+ststemctl status sssd
+systemctl status sssd
+systemctl stop sssd
+authconfig-gtk
+systemctl start sssd
+ssh dsuser1@localhost
+authconfig-gtk
+ll
+echo $?
+$?
+echo $?
+ll
+l
+ll
+echo $?
+l
+echo $?
+cd /
+ll
+su - guru
+chmod 554 root
+ll
+su - guru
+getfacl vi.test
+cd ~
+ll
+cd /home/guru/
+ll
+getfacl vi.test 
+man setfacl
+man getfacl
+su - blue
+passwd guru
+getent passwd dsuser1
+authconfig-gtk
+getent passwd dsuser1
+ssh dsuser1@localhost
+ps -f
+ps -ef
+ps -ef | clock
+ps -ef | grep clock
+ps -ef
+iostat
+iostat -h
+iostat
+iostat -h
+iostat
+iostat -h
+iostat
+iostat -h
+iostat
+iostat -h
+man iostat
+sleep 100 &
+ps -l
+ps -f
+ps -ell
+ps -ell | sort -8
+ps -ell | sort -n -k8
+ps -ell | sort -n -k8 | more
+nice -n -5 sleep 300
+jobs
+pgrep sleep
+pgrep -a sleep
+kill 18 31017
+pgrep -a sleep
+ps -ef | grep sleep
+jobs
+kill 19 31017
+ps -ef | grep sleep
+kill 9 31017
+ps -ef | grep sleep
+kill -9 31017
+nice -n -5 sleep 300 &
+ps -l
+renice -n 5 31396
+ps -l
+tapestat 
+pcio
+cpio
+man cpio
+tar -gz
+man tar
+find / -name *.tar
+cd /home/guru/tars/
+ll
+mv chap4.tar chap4
+ll
+mv chap chap4.tar
+mv chap4 chap4.tar
+tar -cvzf /tmp/home.tar.gz /home
+ll /tmp/home*
+tar -cvf /tmp/home.tar /home
+ll /tmp/home*
+tar -cvzf /tmp/home.tar.gz /home
+ll /tmp/home*
+rm /tmp/home.tar.gz
+tar -cvzf /tmp/home.tar.gz /home
+ll /tmp/home*
+tar -tvf /tmp/home.tar
+tar -crvzf /tmp/home.tar.gz /home
+man tar
+tar -crvlf /tmp/home.tar.gz /home
+man tar
+tar -crvPf /tmp/home.tar.gz /home
+tar -cvzfP /tmp/home.tar.gz /home
+tar -tvf /tmp/home.tar.gz /home
+tar -tvf /tmp/home.tar.gz
+tar -cvzfP /tmp/home.tar.gz /home
+tar -tvf /tmp/home.tar.gz
+tar -tvf /tmp/home.tar
+rm -rf /home
+cd /
+ll
+rm -rf /home
+ps -ef | grep sleep
+kill 4303
+kill 8056
+kill -9 8056
+ps -ef | grep sleep
+kill -9 4303
+passwd
+su - visitor
+ls
+cd /tmp
+ll
+cd /
+tar -xzvf home.tar
+tar -xzvf /tmp/home.tar
+ll
+cd home
+ll
+cd ..
+rm home
+rm -r home
+cd home/
+ll
+tar -xvzf /tmp/home.tar.gz -C /
+ll
+cd /tmp[
+cd /tmp
+ll home*
+bzip2 home.tar
+ll
+bzip2 home.tar.bz2
+bzip2 home.tar.gz 
+ll
+gunzip home.tar.gz.bz2
+bzip2 -d home.tar.bz2 
+bzip2 -d home.tar.gz.bz2 
+ll
+gunzip home.tar.gz 
+xz home.tar
+ll
+xz home.tar.gz 
+ll
+xz -d home.tar.
+xz -d home.tar.gz.xz 
+xz -d home.tar.xz 
+ll
+mv home.tar home.tar2
+gzip -d home.tar.gz 
+ll
+gzip home.tar
+mv home.tar2 home.tar
+ll
+find /home
+find /home | cpio -ocv > /tmp/home.cpio
+cat /tmp/home.cpio 
+ll /home
+cd /
+rm -rf /home
+cpio -icdmu < /tmp/home.cpio
+cd /home/
+ll
+git
+git init
+ll
+while :; do clear; ll; sleep 1; done
+pwd
+npm install
+node
+'/usr/share/doc/HTML/index.html' man echo
+man echo
+bd
+bc
+l
+ll
+lwll
+lgrep
+wgrep
+qgrep
+ogrep
+pgrep
+yum clean all 
+curl 127.0.0.1
+vi /etc/fstab 
+man fsta
+man fstab
+ll
+su - guru
+calc
+su - guru
+wget ttp://rpmfind.net/linux/RPM/centos/7.8.2003/x86_64/Packages/amanda-3.3.3-21.el7.x86_64.html
+wget http://rpmfind.net/linux/RPM/centos/7.8.2003/x86_64/Packages/amanda-3.3.3-21.el7.x86_64.html
+rpm -Uvh http://rpmfind.net/linux/RPM/centos/7.8.2003/x86_64/Packages/amanda-3.3.3-21.el7.x86_64.html
+rpm -Uvh amanda-3.3.3-21.el7.x86_64.rpm
+rpm -qa | grep aman
+pwd
+ll
+rm amanda-3.3.3-21.el7.x86_64.html 
+wget http://rpmfind.net/linux/centos/7.8.203/os/x86_64/packages/amanda-3.3.3-21.el7.x86_64.rpm
+wget http://rpmfind.net/linux/centos/7.8.203/os/x86_64/Packages/amanda-3.3.3-21.el7.x86_64.rpm
+wget http://rpmfind.net/linux/centos/7.8.2003/os/x86_64/Packages/amanda-3.3.3-21.el7.x86_64.rpm
+ll
+mv /home/guru/finance/amanda-libs-3.3.3-21.el7.x86_64.rpm /root/
+ll
+chown root:root *
+ll
+rpm -Uvh amanda-libs-3.3.3-21.el7.x86_64.rpm 
+rpm -Uvh amanda-3.3.3-21.el7.x86_64.rpm 
+echo hi >> /usr/lib/systemd/system/amanda.socket 
+rm -f /usr/sbin/amaespipe 
+chgrp wheel /usr/sbin/amcrypt
+rpm -V amanda
+chown guru:wheel /usr/sbin/amcrypt
+rpm -V amanda
+rpm -qf /usr/sbin/amcrypt
+rpm -qf ls
+rpm -qf /bin/ls
+which ls
+which ll
+
+rpm -ql /bin/ks
+rpm -ql /bin/ls
+rpm -ql amanda
+rpm -e amanda
+rpm -Uvh amanda
+rpm -Uvh amanda-3.3.3-21.el7.x86_64.rpm 
+rpm -V amanda
+amaespipe 
+cd /home/visitor/
+l
+ll
+cd /
+ll
+alias l='ls'
+l
+rpm -e amanda-libs
+rpm -e --force amanda-libs
+rpm -e --nodeps amanda-libs
+amaespipe 
+cd /root/
+ll
+rpm -Uvh amanda-libs-3.3.3-21.el7.x86_64.rpm 
+rpm -e amanda
+rpm -e amanda-libs 
+cd /root/
+ll
+rpm -Uvh --force amanda-3.3.3-21.el7.x86_64.rpm 
+rpm -Uvh amanda-libs-3.3.3-21.el7.x86_64.rpm 
+rpm -Uvh amanda-3.3.3-21.el7.x86_64.rpm 
+cd /var/lib/rp
+cd /var/lib/rpm
+ll
+file
+file /var/lib/rpm/*
+cd /root/
+view .bash_history 
+ll .*
+ll .bash
+ll .bash*
+yum install mod_ssl
+yum search apache
+rpm -qa | grep mod_ssl
+yum remove mod_ssl
+yum history
+info 5
+rpm -e mod_ssl
+rpm -qa | grep mod_ssl
+yum install mod_ssl
+rpm -e mod_ssl
+yum history 
+rpm -e mod_ssl
+rpm -qa | mod_ssl
+rpm -qa | grep mod_ssl
+yum history undo 6
+yum history
+yum install mod_ssl
+yum history
+yum history info 7
+yum undo 7
+yum history undo 7
+yum repolist
+top
+[A
+top
+yum search dbench
+yum search apache
+apt-get
+apachectl 
+apachectl status
+apachectl start
+systemctl status httpd.service 
+systemctl start httpd.service
+rpm install
+man yum
+man -k yum
+man man
+man ll
+man l
+l
+yum repolist
+yum repolist base
+cat -n /etc/yum.conf 
+more /etc/yum
+more /etc/yum.conf 
+more -n /etc/yum.conf 
+more +NUM /etc/yum.conf 
+ll /var/cache/yum/x86_64/7/
+ll /etc/yum.repos.d/
+more /etc/yum.repos.d/classroom.repo 
+more /etc/yum.repos.d/CentOS-Vault.repo 
+view /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+more /etc/yum.repos.d/CentOS-Vault.repo 
+view /etc/yum.repos.d/CentOS-Vault.repo 
+yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+yum repolist
+yum search dbench
+yum searchall dbench
+yum search all dbench
+se
+clear
+yum install dbench
+cd /var/cache/yum/x86_64/7/epel/packages/
+;ll
+ll
+cd ..
+ll
+cd packages/
+ll
+cd ..
+ll
+yum grouplist
+yum repolist 
+yum grouplist
+yum grouplist | more
+nfs
+
+yum grouplist | more
+yum grouplist Web Server
+yum groupinstall 'Basic Web Server'
+ll
+cd /
+ll
+cd /var/www/
+ll
+cd html/
+ll
+ps -ef | grep http
+ll
+pwd
+vi index.html
+yum install git
+cd /srv/
+ll
+yum list installed | less
+yum list available | less
+yum list update
+yum list updates
+yum info gimp
+yum install gimp
+yum remove gimp
+yum whatprovides "*/zebra"
+yum install "/usr/sbin/zebra"
+yum remove "/usr/sbin/zebra"
+yum install "/usr/sbin/zebra"
+yum grouplist
+yum groupinfo
+yum groupinfo "MariaDB Database server"
+yum groupinstall -y "MariaDB Database server"
+yum groupremove -y "MariaDB Database server"
+yum search virtual
+yum search virtual-host
+yum search 'virtual host'
+yum -y install virt-manager
+man yum
+yum -y install virt-manager virt-viewer libvirt qemu-kvm libvirt-daemon-kvm
+echo $?
+ye
+yes
+$?
+echo $?
+yes
+echo $?
+./clock
+/home/guru/clock 
+echo $?
+yes
+no
+ntpq -p
+ntpq
+df -h
+ioscan -funC
+lsblk
+blk
+lsblk
+view /etc/fstab 
+lvm
+lvmconf
+lvmconfig
+parted ?
+parted --help
+w
+fdisk
+fdisk /dev/sda 
+df
+lsblk 
+view /etc/fstab 
+ll
+man partprobe
+man kpartx
+man partprobe
+partprobe /dev/sda
+lsblk 
+partprobe /dev/sda3
+lsblk 
+df
+/run/user/
+ll
+cd /run/user/
+ll
+cd 0/
+LL
+ll
+cd dconf/
+ll
+view user 
+cd gn
+cd ../gnome-shell/
+ll
+cd runtime-state-LE.\:0/
+lll
+ll
+cd /
+l
+alias 
+alias abcdefg='l'
+abcdefg 
+unalias abcdefg 
+lsblk -f
+mkfs -t ext4 /dev/sda3
+lsblk
+lsblk -f
+mkfs.xfs -f /dev/sda3
+lsblk -f
+view /etc/fstab 
+mount /dev/sda3 /var/lib/libvirt/images/
+unmount
+man mount
+df
+ll /home/
+mount /dev/sda3 /var/lib/libvirt/images/aaa
+mount /dev/sda3 /home/aaa
+df
+cd /home/aaa/
+ll
+touch file{1..5}
+umount /dev/sda3
+cd ..
+umount /dev/sda3
+mount /dev/sda3 /home/aa
+mount /dev/sda3 /home/aaa/
+cd /home/aaa/
+ll
+cd /
+ll
+pwd
+umount /home/aaa/
+mkdir /home/www
+mount /dev/sda3 /home/www/
+cd /home/www/
+ll
+cd /home/aaa/
+ll
+touch newfile {1..5}
+ll
+cd /
+umount /home/www/
+mount /dev/sda3 /home/aaa/
+cd /home/aaa/
+ll
+cd /home/www/
+ll
+cd /
+umount /home/www/
+ll
+umount /home/aaa/
+ll
+cd /home/a
+l
+cd /home/aaa/
+ll
+mount -a
+reboot
+lsmod | grep kvm
+lsmod
+man lslod
+man lsmod
+virt-manager 
+find / -name core
+cd /var/lo
+cd /var/log/
+ll
+find / -name syslog*
+cd /var/log/
+ll
+ps -ef | grep journal
+cd /run/
+ll
+cd log/
+ll
+cd journal/
+ll
+cd 9d891011174d46dc81d036e7b3f562eb/
+ll
+view system.journal 
+strings system.journal 
+strings system.journal  | more
+cd .
+cd /
+cd /var/
+ll
+cd log/
+ll
+ll jour*
+journalctl --since "2020-10-22 15:30:00" --until now
+systemctl -t service 
+systemctl -t service | grep service
+:q
+systemctl -t service | grep corn
+systemctl -t service | grep crom
+systemctl -t service | grep cron
+journalctl -u crond.service 
+journalctl -u apache
+journalctl -u sshd
+journalctl -u xinetd.service 
+find / -name *syslog
+journalctl -u sshd.service 
+journalctl --setup-keys --interval=3m
+mkdir /var/log/journal
+journalctl restart system-journald
+systemctl restart system-journald
+systemctl restart systemd-journald
+journalctl --setup-keys --interval=3m
+journalctl
+journalctl --verify --verify-key=708443-b07854-aa05f6-c7e647/87eafc-aba9500
+cat -n /etc/rsyslog.conf 
+cat -n /etc/rsyslog.conf  | more
+cat -n /etc/rsyslog.conf
+more -NUM /etc/rsyslog.conf
+more +NUM /etc/rsyslog.conf
+more +NUM1 /etc/rsyslog.conf
+more +NUM 10 /etc/rsyslog.conf
+more /etc/rsyslog.conf
+view /etc/rsyslog.conf
+systemctl restart rsyslog.service
+ps -ef | grep rsyslog
+pwd
+/home/guru/clock 
+vi /home/guru/clock 
+/home/guru/clock 
+top
+view /home/guru/finance/calc 
+ll
+ifconfig
+man syslog
+man rsyslog.conf
+env | grep sound
+env | grep vol
+env | grep v
+ssh localhost
+ssh sv
+view /etc/hosts
+ssh sv01
+ssh user1@sv01
+ll
+/home/guru/clock 
+view /var/log/logtest2.txt 
+man logrotate
+netstat -nr
+cat /etc/resolv.conf 
+nmcli dev
+nmcli device 
+nmcli connection
+nmcli connection delete 
+nmcli connection delete eno1 
+nmcli connection add type ethernet con-name eno1 ifname eno1 autoconnect yes
+nmcli con mod eno1 ipv4.addresses 59.29.224.201/24 ipv4.gateway 59.29.224.254 ipv4.dns 168.126.63.1 ipv4.method manual
+systemctl restart network
+ifconfig
+ping -c 3 www.google.clo
+ping -c 3 www.google.com
+ping -c 3 kimdohyun.xyz
+ping 168.126.63.1
+ping 59.29.224.254
+ping sv01
+ping www.google.com
+ping abc.xyz
+ping localhost
+ping -c5 localhost
+view /root/.bash_history 
+cd /etc/logrotate.d/
+ll
+view httpd 
+ssh localhost
+ls /etc/sysconfig/network-scripts/
+ll /etc/sysconfig/network-scripts/
+ls /etc/sysconfig/network-scripts/
+ls /etc/sysconfig/network-scripts/en*
+ls /etc/sysconfig/network-scripts/
+ls /etc/sysconfig/network-scripts/eno*
+l. /etc/sysconfig/network-scripts/eno*
+l. /etc/sysconfig/network-scripts/eno
+l. /etc/sysconfig/network-scripts/en*
+ll /etc/sysconfig/network-scripts/en*
+ls /etc/sysconfig/network-scripts/en*
+ls /etc/sysconfig/network-scripts/
+ls /etc/sysconfig/network-scripts/ifcfg*
+ㅣㅣ
+ll
+cd /home/
+ll
+git init
+l.
+git add remote edu http://github.com/azza999/hp-edu
+git remote add edu http://github.com/azza999/hp-edu
+git pull edut
+git pull edu
+git pull edu master
+git pull edu main
+git pull edu
+git branch -M main
+git push -u edu main
+git commit
+git add .
+git commit
+git push -u edu main
+git branch -M main
+git push -u edu main
+cd /home/guru/
+ll
+enablevi
+enable vi.test 
+man ena
+man enable
+rsyslog
+rsyslogd
+pstree.x11 
+pgrep 
+alias
+pgrep syslog
+pgrep -ef syslog
+pgrep -f syslog
+pgrep -e syslog
+pgrep -a syslog
+clear
+vi /etc/rsyslog.conf 
+cp /etc/rsyslog.conf /home/guru/
+cd /home/guru/
+ll
+vi rsyslog.conf 
+vi /etc/rsyslog.conf 
+systemctl restart rsyslog.service
+ps -ef | grep rsyslog
+ps -ef | grep rsyslogd
+ps -ef | grep sleep
+cat /var/log/logtest.txt 
+cp /etc/rsyslog.conf /home/guru/
+view rsyslog.conf 
+systemctl restart rsyslog
+view /var/log/logtest.txt
+view /var/log/logtest2.txt
+view rsyslog.conf 
+systemctl restart rsyslog
+systemctl restart rsyslog.service 
+view /var/log/logtest2.txt
+view /var/log/logtest.txt
+vi /etc/rsyslog.
+vi /etc/rsyslog.conf 
+systemctl restart rsyslog.service 
+vi /var/log/logtest.txt 
+vi /var/log/logtest2.txt 
+rm /var/log/logtest*
+systemctl restart rsyslog.service 
+diff /var/log/logtest2.txt /var/log/logtest.txt 
+vi /etc/logrotate.
+vi /etc/logrotate.conf 
+ls /etc/cron.daily/
+view /etc/logrotate.
+view /etc/cron.daily/logrotate 
+logrotate /etc/logrotate.conf
+cp /etc/logrotate.conf /home/guru/
+ll
+ls /var/log
+ll /var/log/logtest.txt
+logrotate /etc/logrotate.conf
+ll /var/log/logtest.txt
+vi /etc/logrotate.conf 
+logrotate /etc/logrotate.conf
+ll /var/log/logtest.txt
+rm /var/log/logtest*
+ll /var/log/logtest.txt
+systemctl restart rsyslog.service 
+ll /var/log/logtest*
+logrotate /etc/logrotate.conf
+ll /var/log/logtest*
+vi /etc/logrotate.conf 
+ll /var/log/logtest*
+vi /etc/logrotate.conf 
+lsof
+:q
+ping 192.168.124.1
+ip route
+route
+ip height
+ip heigh
+ip neigh
+arp -a
+ip addr
+vi /home/guru/
+cd /home/guru/
+ll
+mkdir mcrc
+cd mcrc/
+vi tiger
+nmtui
+nmcli 
+nmcli enol
+nmcli --help
+ifcfg
+ifconfig 
+view /var/log/logtest.txt 
+man passwd 5
+man 5 passwd
+last
+lastb 
+lastb -f
+while :; do clear; lastb; sleep 1; done
+syslog
+syslogd
+ps -ef | grep syslog
+virt-manager 
+vi /etc/rsyslog.conf 
+systemctl restart rsyslog.service 
+logger -p info -t info-lvl-msg "is it work?"
+vi /etc/rsyslog.conf 
+systemctl restart rsyslog.service 
+logger -p info -t info-lvl-msg "is it work?"
+vi /etc/rsyslog.conf 
+logger -p info -t info-lvl-msg "is it work?"
+logger -p info -t info-lvl-msg "꺄르륵"
+ll
+vi /etc/rsyslog.conf 
+systemctl restart rsyslog.service 
+logger -p info -t info-lvl-msg "is it work?"
+ifconfig
+cd /dev/
+ll
+view co
+view core 
+strings core
+ps -ef | grep tty
+ps -ef | grep tty pts
+man gerp
+man grep
+ps -ef | grep pts
+ifconfig
+
+ifconfig | grep eno
+udevadm info /sys/class/net/eno1 
+
+view /sys/class/net/eno1/speed 
+view /sys/class/net/eno1/dev_id 
+ifconfig
+ll
+cd /dev/vg0/
+ll
+cd var
+cd ../dm-1
+cd ..
+ll
+ethtool
+ethtool enoo1
+ethtool eno1
+ㅣㅣ
+cd /home/
+ll
+cd hu
+ll
+cd guru/
+ll
+vi if
+vi ip

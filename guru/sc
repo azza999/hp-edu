@@ -1,0 +1,8 @@
+echo -n "enter the log file name :"
+read LOG_FILE
+echo writing  on $LOG_FILE
+touch $LOG_FILE
+while :; do
+	date >> $LOG_FILE;
+	sleep 1;
+done

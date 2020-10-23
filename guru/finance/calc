@@ -1,0 +1,6 @@
+echo -n "채권 만기(년) : "; read year
+echo -n "채권 액면가 : "; read price
+echo -n "금리 : "; read irst_rate
+
+
+echo "$price/(1+$irst_rate*0.01)^$year" | bc

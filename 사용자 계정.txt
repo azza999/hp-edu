@@ -1,0 +1,26 @@
+﻿#ACCOUNT
+
+1) 설치 주체/시기
+    - Built-in : system이 설치 시
+        - login : administrator, guest
+        - service : Local System. Local Service, Network Service
+
+    -사용자 정의 : 사용자가 임의로
+        -Login : Alice, Tom
+
+2) 소속 / 포함
+    - User : Login(O), 암호 (O) -> 단일 PC, AD
+    - Computer : Login (?), 암호 (?) //AD 설정 시 생김
+    - Group : Login (X), 암호(O) -> vhgka
+	- Scope
+		PC Local Group
+		Dpmain Local Group
+		Universal Forest Local Group
+		Global Group
+	- Type (권한, 메일링)
+		Security	: SID 있음 -> 권한설정, 메일링 가능
+		DIstribution : SID 없음 -> 권한설정 불가, 메일링 가능
+
+3) 저장 위치 :
+    - Local		:SAM
+    - AD		: ntds.dit (AD DB)

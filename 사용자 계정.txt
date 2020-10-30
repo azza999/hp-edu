@@ -18,8 +18,8 @@
 		Universal Forest Local Group
 		Global Group
 	- Type (권한, 메일링)
-		Security	: SID 있음 -> 권한설정, 메일링 가능
-		DIstribution : SID 없음 -> 권한설정 불가, 메일링 가능
+		Security (보안)	: SID 있음 -> 권한설정, 메일링 가능
+		DIstribution (배포)	: SID 없음 -> 권한설정 불가, 메일링 가능
 
 3) 저장 위치 :
     - Local		:SAM

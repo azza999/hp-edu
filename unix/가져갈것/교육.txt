@@ -1,0 +1,228 @@
+유 미 takytaky@empas.com
+
+IP : 59.29.225.180~187 / 190~197
+59.29.225.184
+
+awk -F : '{print $2}' /etc/passwd
+
+useradd -u UID -g GROUP -m -d DIR -s SHELL 
+usermod
+userdel
+
+groupadd
+groupmod
+groupdel
+
+
+/etc/default/security - 시스템 사용자들에 대한 에이징 정책
+
+serial port - 노트북으로 직접 서버에 연결
+MP Cards - 바이오스 생각하면 됨
+rc.config.d -> OS 에서 rc => Run Command, .d -> directory
+
+TIGER - wireshark로 패킷 분석
+
+tty 그룹 이름의 파일 찾기 ㅋㅋ
+wall 명령어 - 유저들에게 메시지 전송
+/dev/pts/xx에 출력 리다이렉트로 메시지 보내기 가능
+
+dev 관련 명령어
+
+lssf	장치파일 속성 출력
+insf	장치 파일 생성 -
+기본 - 새로운 장치에 대해 생성 ( 기존 장치 지운거는 무시)
+-e => 기존 장치도 포함 (재생성 가능한거 전부다)
+mksf	장치 파일 생성 - 
+mknod	장치 파일 생성
+rmsf	장치 파일 삭제
+
+ioscan -m lun
+# rm /dev/disk/disk13
+rm /dev/rdisk/disk13
+insf -ve # 전체 연결 장치 재생성
+insf -ve -H 64000/0xfa00/0x6 # 64000/0xfa00/0x6 재생성
+
+lvlnboot -v = 부트 디스크 확인
+
+lvmadm -l
+
+=============== 디스크 구성 ==================
+
+디스크 잡기
+먼저 ioscan 및 디스크 생성으로 /dev/disk/diskXX 잡아줌
+생성 (스캔) ioscan -funC disk
+생성 (스캔) ioscan -funNC disk
+삭제 
+
+볼륨 그룹 생성
+
+mkdir /dev/vg01
+chown root:sys /dev/vg01
+chmod 755 /dev/vg01
+
+mknod /dev/vg01/group c 64 0x010000 #앞이 메이저, 뒤는 마이너인데 메이저는 64 고정, 마이너는 그냥 없는 번호 주면됨
+chown root:sys /dev/vg01/group
+chmod 640 /dev/vg01/group
+
+vgcreate -V 2.2 -s 4 -S 1t vg02 /dev/disk/disk14
+-V 버전
+-s extent 사이즈
+-S 최대 사이즈
+이름
+디스크
+
+lvcreate -n datavol -L 40 vg02
+-n 이름
+-L 사이즈
+
+사이즈 없으면 0짜리 생성됨
+이름 없으면 lvolX, rlvolX 생성됨
+-l은 extent 수
+-L 40 => 40MB
+-l 40 => 4MB * 40 = 160MB
+
+vgdisplay
+lvdisplay -v /dev/vgXX/__NAME__
+pvdisplay /dev/disk/disk12
+fstyp -v /dev/vg00/rlvol4
+rmsf 
+
+vg - 논리 디스크 그룹
+lv - 논리적 디스크
+pv - 물리적 디스크 
+
+용량 확보만 가능하다면, lvm으로 각 콘솔/서버당 이미지를 2개씩 넣어놓고 논리적으로 복구 가능
+
+========== 파일 시스템 설명 =========
+
+파일시스템 구조 정보
+1) superblock: 파일시스템 일반적 속성
+ - 종류		(vxfs, ntfs, fat 등등)
+ - 크기		(size/ used,free)
+ - 블럭 size	(block size, default: 4k)
+
+2) inodes (inode-table) 각 파일들의 속성
+i-node number -> 고유 식별 번호
+
+유닉스 파일 시간
+ctime (create) - 생성 시간
+atime (access) - 접근 시간
+mtime (modify) - 수정 시간
+
+링크 : 이름/경로 다른 파일이 늘 같은 내용을 유지
+1) 하드링크
+	- 같은 파일 시스템에만 구현 가능
+	- 파일만 링크 구현 가능  (디렉토리 링크 X)
+	
+2) 소프트링크 (=바로가기
+	- 다른 파일시스템(파티션)에도 구현 가능
+	- 파일, 디렉토리도 링크 구현
+
+3) directory
+
+4) intent log (journal)
+
+파일시스템 만들기
+
+mkdir /dev/vg01
+chown root:sys /dev/vg01
+chmod 755 /dev/vg01
+
+mknod /dev/vg01/group c 64 0x010000 #앞이 메이저, 뒤는 마이너인데 메이저는 64 고정, 마이너는 그냥 없는 번호 주면됨
+chown root:sys /dev/vg01/group
+chmod 640 /dev/vg01/group
+
+vgcreate -V 2.2 -s 4 -S 1t vg02 /dev/disk/disk14
+
+vgdisplay vg02
+lvcreate -n kimfs -L 160 vg02
+lvdisplay -v /dev/vg02/kimfs
+
+newfs /dev/vg02/rkimfs/
+# -largefile - 파일 하나의 크기가 2GB가 넘어가는 파일 기본적으로 지원 (구버전 지원 X)
+# fsadm -F vxfs /dir -라지파일 지원하는지 확인
+
+mkfs -m /dev/vg02/rkimfs => 실제 실행되는 명령어 확인
+
+mkdir /test
+mount /dev/vg02/kimfs /test
+fuser /file(/directory) => 사용중인 유저 확인
+
+
+6-4 스왑 설명
+6-6 스왑 종류
+6-10 스왑 활성화 방법
+
+7-3 디스크 조각 모음
+7-10 bdf, du -sk
+df - disk free
+bdf - berkely df
+du - disk usage
+du -s(um)
+7-14 볼륩그룹 키우기
+7-17 디스크 지정해서 볼륨그룹 키우기
+디스크 지정해서 볼륨그룹 생성하려면, 용량 0인거 하나 만들고 디스크 지정해서 키우기
+이쪽이 볼륨그룹 관리하는거
+vgextend
+vgreduce vg02 /dev/disk/disk11
+vgremove
+vgcreate
+vgdisplay
+
+pvdisplay
+
+9-12 depot 설치
+9-16 depot 삭제
+
+패치, 프로덕트 설치 명령어는 같음
+
+부팅 과정
+
+run level 0 ~ 3 -> who -r 로 확인
+run level 0 (halt state)
+	- OS 모든 프로세스가 종료된 상태
+	- 하드웨어 모델 (power-on) 하드웨어만 전원 있는 상태
+
+run level s (=single user mode)
+	- 장애처리 목적 (--> 안전모드)
+	- 최소한 자원으로 부팅만
+	- 네트워크 연결
+	- /,/stand 파일시스템만 자동 마운트
+	- 로그인 과정 생략 (root 암호 분실시 사용가능)
+
+run level 1 ( = single user mode)
+	- 파일 시스템 자동 마운트
+	- 호스트네임
+
+run level 2 (= multi user mode)
+	-네트워크 연결 (IP, netmask, default gw, DNS)
+	- 서비스 실행 (http, dns server, ntp,nfs client)
+
+run level 3(= multi user mode)
+	- CDE (Common Desktop Environment) : GUI 실행
+	- NFS Server
+
+복귀하면 할거
+DFS 점검 (공유권한, AD, 서비스 설정 상태)
+IIS 점검 (Http 바인드 확인, 재부팅)
+서버 fsadm -F vxfs / 확인 (라지파일 지원 확인)
+유닉스/리눅스 부팅 과정
+프로세스 실행 과정 (메모리, 페이지 부재, swap 영역)
+
+netstat -in => 포트별 IP 확인
+netstat -an => 인터넷 소켓 상태 확인
+netstat -rn => 라우팅테이블
+swlist -l bundle | grep HW= => 하드웨어 관련 드라이버 보기
+ioscan -fkc lan 에서 unclaimed 뜨면 90% 이상 드라이버 문제
+lanscan
+lanadmin -a 1 은 보는거
+lanadmin -A 0x000000 1 은 설정하는거
+/sbin/init.d/hpigssn start - 다시 /etc/rc.config.d/hpigssnconf 참조해서 설정
+ifconfig lan1 128.1.0.1 netmask 255.255.0.0 up
+ifconfig lan1 down
+ifconfig에서 down은 down이라고 안뜨고 up이 안나옴
+ifconfig lan1 unplumb - 전체 랜(서브ip도) 삭제
+ifconfig lan1:1 0.0.0.0 - 특정 lan만 삭제
+
+/etc/rc.config.d/nddconf
+/sbin/init.d/net

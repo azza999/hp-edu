@@ -1,0 +1,324 @@
+유 미 takytaky@empas.com 
+
+
+
+
+
+실습 장비 : 59.29.225.180 ~ 187  / 190 ~ 197
+ID : root 
+PW : hp
+
+www.google.com
+putty
+
+
+
+
+
+shell(껍데기)
+= interactive command interpreter 
+  (대화식 명령어 해석기)
+
+/etc/passwd : 사용자 계정 정보 
+사용자이름 : 암호 : uid : gid : 설명 : 홈디렉토리 : shell
+
+bourne shell ----> korn shell ----> posix shell 
+	           /usr/bin/ksh    /usr/bin/sh 
+bourne again shell (bash)
+
+C-shell ---> tcsh
+
+
+useradd    yumi
+usermod
+userdel
+
+groupadd 
+groupmod
+groupdel
+
+man security 
+j : 아래로 
+k : 위로
+q (quit) : 종료
+
+
+사용자 쉘 환경 설정 파일 (템플렛)
+
+
+
+
+
+
+
+
+
+www.hpe.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/etc/passwd  : 사용자 계정 
+/etc/group : 사용자그룹 
+/etc/shadow : 암호 정책(aging)
+
+1) DAS (Direct Attachment Storage)
+2) SAN (Storage Area Network)
+
+11iv1,11iv2 : 장치 식별 (path)
+11iv3 : 장치 식별 (WWID) 
+
+# telnet rx219 
+root 
+hpvm
+
+
+
+
+
+
+
+
+
+
+OLRAD
+(OnLine Replace, Add, Delete)
+
+device file = link to a device (handler),pointer
+
+
+
+
+
+lssf (list special file) : 장치파일 속성 출력
+
+1) insf (install special file ) : 장치 파일 생성 (표준)
+mksf (make sf) : 장치 파일 생성(특이한 옵션 조합)
+mknod ( mkae sf) : 장치 파일 생성
+
+
+rmsf (remove sf ): 장치 파일 삭제
+
+
+# rm /dev/vg00/rlvol8
+# ls -l /dev/vg00
+# insf -v -e
+# ls -l /dev/vg00/rlvol8
+
+
+crw-r-----   1 root       sys         64 0x000008 Jun  1  2019 rlvol8
+
+
+
+
+
+
+
+# pvdisplay -ul /dev/disk/disk*
+# pvcreate /dev/rdisk/disk13  (disk--> pv)
+	--> disk 상단(top)에 LVM 구조 정보가 저장될 헤더 구성 
+	--> LVM Data structure (VGRA/PVRA)
+
+# pvdisplay -ul /dev/disk/disk*  
+	--> 시스템 연결된 디스크들 중 현재 PV 초기화된 확인
+
+# diskinfo /dev/rdisk/disk13     
+	--> 디스크 사이즈 / 모델명 확인 
+	--> 디스크 장애 여부 확인
+
+# vgcreate vg01 /dev/disk/disk13
+	--> 기본 extent  size = 4mb (LVM v1)
+# vgcreate -V 2.2 -s 4 -S 1t vg02 /dev/disk/disk12
+
+
+
+
+
+
+
+
+
+lvcreate 
+	-L : MB 단위 사이즈
+	-l : extent 수
+lvcreate -l 40
+	(4mb * 40 =160mb)
+
+unavailable(장애_
+
+
+PE (Physical Extent)
+
+AIX (IBM) - jfs
+HP-UX (HPE) - hfs / vxfs 
+Solaris (Oracle) - ufs /zfs
+
+Linux (ext4 /xfs)
+
+
+파일 시스템 구조 정보(FS structure information/ metadata)
+1) superblock : 파일 시스템 일반적인 속성
+종류(vxfs), 크기(size/used,free), 블럭사이즈(4k), 속성...
+
+2) inodes (inode-table)  : 각 파일들의 속성 
+i-node number : 각 파일이 생성--> 고유 식별 번호
+inum   | type | permission | links |  onwer   | group  | size     | timestamp |  block 주소
+2500      f            444          1        root        sys      2202    00:00:00           ####
+
+3) directory 
+filename --> inode number 
+
+4) intent log (journal) 
+
+
+링크 : 이름/경로 다른 파일이 늘 같은 내용을 유지
+1) 하드링크  : inode number 공유
+	- 같은 파일시스템(파티션)에만 구현 가능
+	- 파일만 링크 구현 가능(디렉토리 링크 X)
+	- 원본 삭제시 : 사용 가능 	
+
+2) 심볼릭 링크 (= 바로가기)
+	- 다른 파일시스템(파티션)에도 구현 가능 
+	- 파일, 디렉토리도 링크 구현 
+	- 원본 삭제 시 : 사용 불가능
+
+
+vgdisplay vg02 
+lvcreate -n yumifs -L 160 vg02
+lvdisplay -v /dev/vg02/yumifs
+
+hfs / vxfs
+
+-o largefiles
+
+
+
+
+
+
+
+
+df (disk free) : 파일 시스템 사용 가능 공간 
+bdf (berkely df)
+
+du (disk usage) : 특정 디렉토리 하위 데이터 합
+	# du -s (sum)
+
+/var/adm/wtmps : 시스템 성공적인 로그인 기록 
+	# last -R
+/var/adm/btmps : 시스템 실패한 로그인 기록 
+	# lastb -R
+2nd PV 에 LV 생성하기
+-------------------------------------------------------
+lv name : hpvol
+vg name : vg02
+lv size : 160mb (2nd pv )
+1) # lvcreate -n hpvol vg02 
+2) # lvextend -L 160 /dev/vg02/hpvol /dev/disk/disk11
+
+
+
+
+
+PHKL (kernel)
+PHCO (comman)
+PHNE (network)
+PHSS (응용프로그램, 기타등등)
+
+오피스디포, 드림디포(depot) 창고,저장소 = repository
+
+
+
+
+
+
+
+
+
+
+
+실습파일 복사하기 
+# rcp vm197:/tmp/sna.tar   /tmp
+# tar -xvf  /tmp/sna.tar
+# cd /labs/depots
+
+
+
+
+
+
+
+run level (실행 수준) 0 ~ 3    # who -r
+run level 0 (=halt state)
+	- OS, 모든 프로세스가 종료된 상태
+	- 하드웨어 모델 (power-on)
+run level s (=single user mode)
+	- 장애처리 목적 (--> 안전모드)
+	- 최소한 자원으로 부팅만!(서비스X)
+	- 네트워크 연결 (console 접근)
+	-/,/stand  (/stand/vmunix, 커널) 파일시스템만 자동 마운트
+	- 로그인 과정 생략 (root 암호 분실시)
+run level 1 (=single user mode)
+	- 파일 시스템 자동 마운트 (<---- /etc/fstab)
+	- 호스트네임
+run level 2 (= multi user mode)
+	- 네트워크 연결(IP,netmask, default gw, DNS..)
+	- 서비스 실행 (http, dns server, ntp, nfs client .....)
+
+run level 3 (= multi user mode)
+	- CDE (Common Desktop Environment) : GUI 실행
+		--> Xmanager, reflex-X, xming
+	- NFS Server 
+
+shutdown -h now (=init 0)
+
+Poweron 
+	1) POST (Power On Self Test) : 하드웨어 점검
+	2) PAL / SAL : 하드웨어 초기화
+	3) EFI : 부팅 장치를 선택 (NVRAM : 비휘발성메모리, default boot disk )
+
+
+가상 서버 호스트 접근하기 
+---------------------------------------------------
+59.29.225.218 ( 59.29.225.18# ) 
+id : root
+pw : hpvm 
+
+59.29.225.219 ( 59.29.225.19# )
+id : root
+pw : hpvm 
+
+# hpvmstatus 
+# hpvmconsole -P vm197
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
